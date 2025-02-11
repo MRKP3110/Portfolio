@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Wbsite</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-900">
+
+    <div class="px:10 md:px-40">
+        <!-- Navbar -->
+         <nav class="flex justify-between items-center h-24">
+            <!-- Logo -->
+            <a href="#" id="logo" class="text-sky-500 text-3xl font-bold border-2 border-sky-500 px-2 py-1 x-10">@ KP</a>
+
+            <!-- Desktop Menu -->
+             <ul class="md:flex space-x-10 hidden">
+                <li>
+                    <a href="#home" class="text-sky-500">Home</a>
+                </li>
+                <li>
+                    <a href="#intro" class="text-white hover:text-sky-500">My intro</a>
+                </li>
+                <li>
+                    <a href="#services" class="text-white hover:text-sky-500">Services</a>
+                </li>
+                <li>
+                    <a href="#portfolio" class="text-white hover:text-sky-500">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#blog" class="text-white hover:text-sky-500">Blog</a>
+                </li>
+                <li>
+                    <a href="#hire" class="text-white bg-sky-500 px-6 py-2 rounded-full border-2 border-sky-500 hover:bg-sky-600">Hire Me</a>
+                </li>
+             </ul>
+
+             <!-- Hamburger -->
+             <a href="#" id="burger" class="text-white text-2xl md:hidden">
+                <i class="fa-solid fa-bars"></i>
+             </a>
+         </nav>
+
+         <!-- Hero Section -->
+
+         <section id="home" class="flex md:flex-row flex-col justify-between">
+            <div class="pt-16 md:pt-30 ">
+                <span class="text-white text-xl">👋Hi, I am</span>
+                <h1 class="text-sky-500 text-6xl md:text-7xl font-bold font-serif mt-2 mb-5">Kirtan</h1>
+                <h2 class="text-sky-400 font-bold uppercase text-xl md:text-2xl">Web Developer/Designer</h2>
+                <p class="text-gray-400 max-w-lg mt-6 mb-16">
+                    I'm web developer and designer, crafting responsive, user-friendly websites that combine functionality with creative design to deliver seamless digital experiences.
+                </p>
+
+                <div class="space-x-5">
+                    <a href="#" class="text-white bg-sky-500 px-6 py-2 rounded-full border-2 border-sky-500 hover:bg-sky-600">Download CV</a>
+
+                    <a href="#hire" class="text-white  px-6 py-2 rounded-full border-2 border-sky-500 hover:bg-sky-600">Contact Me</a>
+                </div>
+            </div>
+
+            <img src="./Assets/01.jpg" class="w-full md:w-1/2 mt-10 md:mt-0">
+         </section>
+
+         <!-- Mobile Menu -->
+         <ul  id="list" class="flex flex-col justify-center items-center space-y-10 md:hidden bg-sky-500 absolute top-0 bottom-0 left-0 w-60 transform -translate-x-full transition:transform duration-300">
+            <li>
+                <a href="#home" class="text-slate-900">Home</a>
+            </li>
+            <li>
+                <a href="#intro" class="text-white hover:text-slate-900">My intro</a>
+            </li>
+            <li>
+                <a href="#services" class="text-white hover:text-slate-900">Services</a>
+            </li>
+            <li>
+                <a href="#portfolio" class="text-white hover:text-slate-900">Portfolio</a>
+            </li>
+            <li>
+                <a href="#blog" class="text-white hover:text-slate-900">Blog</a>
+            </li>
+            <li>
+                <a href="#hire" class="text-white bg-sky-500 px-6 py-2 rounded-full border-2 border-sky-500 hover:bg-sky-700">Hire Me</a>
+            </li>
+         </ul>
+    </div>
+
+    <!-- Main Content Section -->
+<main class="py-20 px-6">
+    
+     <!-- My Intro Section -->
+     <section id="intro" class="mt-20">
+        <h2 class="text-4xl text-blue-600 text-center">About Me</h2>
+        <p class="mt-4 text-lg text-gray-400 max-w-4xl mx-auto text-center">I am a web developer with experience in creating high-quality, responsive websites. I specialize in front-end development and love to work with HTML, CSS, JavaScript, and modern frameworks like React and Vue.</p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="mt-20 ">
+        <h2 class="text-4xl text-blue-600 text-center ">Services</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+            <div class="service-item bg-white p-6 rounded-lg shadow-lg">
+                <h3 class="text-xl text-blue-600 font-semibold">Web Development</h3>
+                <p class="mt-4 text-gray-700">I create responsive and functional websites using modern technologies such as HTML, CSS, and JavaScript.</p>
+            </div>
+            <div class="service-item bg-white p-6 rounded-lg shadow-lg">
+                <h3 class="text-xl text-blue-600 font-semibold">UI/UX Design</h3>
+                <p class="mt-4 text-gray-700">I design user-friendly interfaces with a focus on enhancing the user experience.</p>
+            </div>
+            <div class="service-item bg-white p-6 rounded-lg shadow-lg">
+                <h3 class="text-xl text-blue-600 font-semibold">SEO Optimization</h3>
+                <p class="mt-4 text-gray-700">I optimize websites to perform well in search engines and drive traffic to your site.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="mt-20">
+        <h2 class="text-4xl text-blue-600 text-center ">My Blog</h2>
+        <p class="mt-4 text-lg text-gray-400 text-center">Check out my latest blog posts where I share tips on web development, design, and more!</p>
+    </section>
+
+    <!-- Hire Me Section -->
+    <section id="hire" class="mt-20 text-center">
+        <h2 class="text-4xl text-blue-600">Hire Me</h2>
+        <p class="mt-4 text-xl text-gray-400">If you’re interested in working together, feel free to reach out and we can discuss your project!</p>
+        <button class="mt-6 bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700">Contact Me</button>
+    </section>
+</main>
+    
+    <!-- Javascript -->
+
+    <script>
+
+        const list = document.getElementById('list');
+        const Hamburger = document.getElementById('burger');
+        const bars = document.querySelector('.fa-bars')
+        const logo = document.getElementById('logo')
+
+        Hamburger.addEventListener('click', ()=>{
+
+            list.classList.toggle('translate-x-0');
+            bars.classList.toggle('fa-xmark');
+            logo.classList.toggle('text-slate-900');
+            logo.classList.toggle('border-slate-900');
+        }
+        )
+
+    </script>
+</body>
+</html>
